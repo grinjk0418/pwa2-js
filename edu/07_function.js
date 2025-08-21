@@ -23,7 +23,7 @@ function fnc3(a, b) {
 const fnc4 = function(a, b) {
   return a + b;
 }
-fnc4(1, 3);
+console.log(fnc4(1, 3));
 
 // 화살표 함수
 const fnc5 = (a, b) => a + b;
