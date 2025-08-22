@@ -82,7 +82,7 @@ console.log(arr4.includes('갑순이')); // false 반환
 //값의 존재 여부 알고 싶을때 요새는 indexOf 보다는 불리언으로 반환하는 includes 방법 쓴다.(이프문 간단하게 쓰기 위해서..)
 
 // push(...args) : 원본 배열에 마지막 요소를 추가하고, 바뀐 length 반환
-// ...의 의미는 아규먼트의 갯수가 몇개여도 상관없다. 
+// ...의 의미는 아규먼트의 갯수가 몇개여도 상관없다는 뜻. 
 const resultLength = arr4.push(100);
 console.log(resultLength, arr4);
 
