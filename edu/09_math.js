@@ -9,7 +9,7 @@ Math.ceil(double); // 1
 Math.round(double); // 1
 Math.floor(double); // 0
 
-// random() : 0초과 1미만의 랜덤한 수를 반환
+// random() : 0이상 1미만의 랜덤한 수를 반환 (0은 정말 극악의 확률.. 거의 안나온다.)
 let randomDouble = Math.random();
 // 1~10 난수
 console.log(Math.ceil(randomDouble * 10));
