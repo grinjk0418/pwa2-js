@@ -1,0 +1,26 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.inputWriteDiv {
+  border: 1px solid #000;
+  
+}
+
+.WriteBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* fieldset {
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+} */

@@ -60,6 +60,7 @@ const result = {
 };
 
 addCard(result);
+addCard(344);
 
 function addCard(item) {
 // 카드 구조 만들기

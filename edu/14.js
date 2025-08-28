@@ -6,15 +6,15 @@ function test() {
 // property Listener(프로퍼티 리스너) //잘안쓴다 //덮어쓰기 하나만됨
 // 동일한 이벤트를 여러번 사용 불가
 const btn2 = document.querySelector('#btn2');
-// btn2.onclick = test;
-btn2.onclick = () => {
-  alert('버튼222');
-}
+btn2.onclick = test;
+// btn2.onclick = () => {
+//   alert('버튼222');
+// }
 
-btn2.onclick = () => {
-  alert('22222222');
-}
-// btn2.onclick = test();
+// btn2.onclick = () => {
+//   alert('22222222');
+// }
+btn2.onclick = test();
 
 
 // addEventListener //현대에선 무조건 얘 쓴다//
