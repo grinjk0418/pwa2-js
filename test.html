@@ -1,0 +1,67 @@
+<!-- 인풋창 아무것도 안누르면 작성버튼 X -->
+<!-- 뭐 적고 작성버튼 누르면 아래에 글자 출력  . -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+<body>
+  <h1>회원가입을 환영합니다</h1>
+  <form>
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li>
+          <label for="account">아이디 </label>
+          <input type="text" name="account" id="account" placeholder="4자 ~ 10자 사이, 공백없이" required>
+        </li>
+        <li>
+          <label for="email">이메일 </label>
+          <input type="email" name="email" id="email" required>
+        </li>
+        <li>
+          <label for="password">비밀번호 </label>
+          <input 
+          type="password" 
+          name="password" 
+          id="password" 
+          placeholder="문자와 숫자, 특수 기호 포함" 
+          required
+          >
+        </li>
+        <li>
+          <label for="password_check">비밀번호 확인 </label>
+          <input type="password" name="password_check" id="password_check" required>
+        </li>
+        <li>
+          <label for="accession">가입 경로 </label>
+          <select name="accession" id="accession">
+            <option value="etc">기타</option>
+            <option value="suggest">추천</option>
+          </select>
+        </li>
+        <li>
+          <label for="memo">메모 </label>
+          <textarea name="memo" id="memo" cols="30" rows="10" placeholder="남길 말씀이 있다면 여기에"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <input type="radio" name="mail" id="reception" value="1">
+      <label for="reception">메일 수신</label>
+      <input type="radio" name="mail" id="receptionX" value="0" checked>
+      <label for="receptionX">메일 수신 안 함</label>
+    </fieldset>
+    <button type="submit">가입하기</button>
+    <button type="reset">취소</button>
+  </form>
+</body>
+</html>
